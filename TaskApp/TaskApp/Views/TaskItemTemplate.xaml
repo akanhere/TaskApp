@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:cp="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             mc:Ignorable="d"
+             x:Class="TaskApp.Views.TaskItemTemplate">
+  <ContentView.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <cp:PancakeView Grid.Row="0"
+                            HasShadow="True"
+                            BackgroundGradientAngle="30"
+                            CornerRadius="12"
+                            >
+                <Label Text="{Binding Name}"
+                       Margin="5"
+                       />
+            </cp:PancakeView>
+      </Grid>
+  </ContentView.Content>
+</ContentView>

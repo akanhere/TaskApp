@@ -6,5 +6,7 @@
     
     <Color x:Key="WhiteColor">#FFFFFF</Color>
     <Color x:Key="BlackColor">#000000</Color>
+    <Color x:Key="ListBackground">#573753</Color>
+    <Color x:Key="ListHiglight">#684B64</Color>
    
 </ResourceDictionary>

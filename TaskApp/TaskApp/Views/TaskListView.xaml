@@ -3,27 +3,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:t="clr-namespace:TaskApp.Views"
              mc:Ignorable="d"
              x:Class="TaskApp.Views.TaskListView">
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="Title Style" TargetType="Label">
-                <Setter Property="FontSize" Value="38"/>
-                <Setter Property="TextColor" Value="{StaticResource WhiteColor}"/>
-                <Setter Property="Margin" Value="18,24,0,0"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="TextColor" Value="{StaticResource BlackColor}"/>
+                <Setter Property="Margin" Value="12,24,0,0"/>
             </Style>
+            <Style x:Key="GridBackground" TargetType="Grid">
+                <Setter Property="BackgroundColor" Value="{StaticResource ListBackground}"/>
+            </Style>
+            <DataTemplate x:Key="TaskItemsTemplate">
+                <t:TaskItemTemplate/>
+            </DataTemplate>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
         <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Label Grid.Row="0"
-                   Text="Task List"/>
-            <CollectionView Grid.Row="1"
-                            ItemsSource="{Binding Tasks}"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="80"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0"
+                       Text="Task List" Style="{StaticResource Title Style}"/>
+                <CollectionView Grid.Row="1"
+                                Margin="12"
+                                ItemsSource="{Binding Tasks}"
+                                ItemTemplate="{StaticResource TaskItemsTemplate}"/>
+            </Grid>
+            <t:TaskPopUpView x:Name="Popup"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
