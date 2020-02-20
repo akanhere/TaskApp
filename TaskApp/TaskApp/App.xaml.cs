@@ -1,5 +1,6 @@
 ﻿using System;
 using TaskApp.Views;
+using TaskApp.Views.TaskCreators;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +12,7 @@ namespace TaskApp
         {
             InitializeComponent();
 
-            MainPage = new TaskListView();
+            MainPage = new TaskCreatorHomeView();
         }
 
         protected override void OnStart()

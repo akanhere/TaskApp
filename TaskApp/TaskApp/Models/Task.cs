@@ -7,8 +7,13 @@ namespace TaskApp.Models
 {
     public class Task
     {
+        public string ID { get; set; }
         public string Name { get; set; }
         public string Category { get; set; }
+
+        public string Priority { get; set; }
+
+        public DateTime PrefferedTime { get; set; }
         public DateTime AssignedDate { get; set; }
         public TaskStatus Status { get; set; }
 

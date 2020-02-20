@@ -19,7 +19,7 @@
                             >
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinitions/>
+                        <RowDefinition/>
                     </Grid.RowDefinitions>
                         
                     <Label Text="{Binding Name}"
