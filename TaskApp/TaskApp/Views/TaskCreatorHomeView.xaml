@@ -25,9 +25,10 @@
             <!-- Top Bar -->
             <Image Grid.Row="0" 
                    Grid.Column="0" 
-                   WidthRequest="16" 
-                   HeightRequest="16"
-                   Margin="10,20,0,0"
+                   WidthRequest="36" 
+                   HeightRequest="36"
+                   Margin="20,20,0,0"
+                   Source="outline_reorder_black_24.png"
                    VerticalOptions="Center"
                    HorizontalOptions="Start"/>
             <Label Text="HOME" 
@@ -35,6 +36,7 @@
                    Grid.Column="1"
                    FontFamily="Poppins-Regular.ttf#Poppins-Regular"
                    FontSize="20"
+                   TextColor="Black"
                    VerticalOptions="Center" 
                    Margin="0,20,0,0"
                    HorizontalOptions="CenterAndExpand"/>
@@ -59,25 +61,34 @@
                 </Grid.ColumnDefinitions>
                 <Label Text="24" Grid.Column="0"
                        FontFamily="Poppins-Medium.ttf#Poppins-Medium"
-                       FontSize="60"
+                       FontSize="70"
+                       TextColor="Black"
                        VerticalTextAlignment="Start"
                        VerticalOptions="Center"
                    />
                 <Label Text="Feb" Grid.Column="1"
                    FontFamily="Poppins-Regular.ttf#Poppins-Regular"
-                   FontSize="35"
+                   FontSize="50"
+                       TextColor="Black"
                        VerticalTextAlignment="Center"
+                       Margin="10,14,0,0"
                    VerticalOptions="Center" 
                    />
             </Grid>
+            <Image Grid.Row="1"
+                   Grid.Column="2"
+                   HeightRequest="36"
+                   WidthRequest="36"
+                   Margin="0,0,20,0"
+                   Source="outline_today_black_24.png"/>
 
             <!--Today Text-->
-            <Label Text="TODAY" 
+            <Label Text="YOUR COMPLAINTS" 
                    Grid.Row="2"
                    Grid.Column="0"
                    Grid.ColumnSpan="3"
                    FontFamily="Poppins-Light.ttf#Poppins-Light"
-                   FontSize="24"
+                   FontSize="22"
                    VerticalOptions="StartAndExpand" 
                    HorizontalOptions="StartAndExpand"
                    Margin="20,0,20,0"/>
@@ -120,10 +131,12 @@
                                            TextColor="White"
                                            HorizontalOptions="Start"
                                            VerticalOptions="Center" />
-                                    <Label Text="Client Meeting"
+                                    <Label Text="Complaint Plumbing Is Having"
+                                           MaxLines="2"
                                            HorizontalOptions="Center"
                                            FontSize="Large"
                                            FontFamily="Poppins-Regular.ttf#Poppins-Regular"
+                                           LineBreakMode="TailTruncation"
                                            TextColor="White"/>
                                     <Label Text="11 am - 2 pm"
                                            FontAttributes="Italic"
@@ -140,6 +153,17 @@
             </CarouselView>
 
             <!--TaskList-->
+            <!--Add Button-->
+            <StackLayout Grid.Row="5" 
+                         Grid.Column="0"
+                         Grid.ColumnSpan="3"
+                         VerticalOptions="Center"
+                         HorizontalOptions="End">
+            <Image HeightRequest="64"
+                   WidthRequest="64"
+                   Source="outline_add_circle_outline_black_36.png"
+                   Margin="0,0,20,0"/>
+            </StackLayout>
 
 
         </Grid>

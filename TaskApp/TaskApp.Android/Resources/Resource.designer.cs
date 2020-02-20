@@ -5789,10 +5789,55 @@ namespace TaskApp.Droid
 			public const int notify_panel_notification_icon_bg = 2131165299;
 			
 			// aapt resource value: 0x7F070074
-			public const int tooltip_frame_dark = 2131165300;
+			public const int outline_add_circle_outline_24 = 2131165300;
 			
 			// aapt resource value: 0x7F070075
-			public const int tooltip_frame_light = 2131165301;
+			public const int outline_add_circle_outline_black_18 = 2131165301;
+			
+			// aapt resource value: 0x7F070076
+			public const int outline_add_circle_outline_black_24 = 2131165302;
+			
+			// aapt resource value: 0x7F070077
+			public const int outline_add_circle_outline_black_36 = 2131165303;
+			
+			// aapt resource value: 0x7F070078
+			public const int outline_add_circle_outline_black_48 = 2131165304;
+			
+			// aapt resource value: 0x7F070079
+			public const int outline_reorder_24 = 2131165305;
+			
+			// aapt resource value: 0x7F07007A
+			public const int outline_reorder_black_18 = 2131165306;
+			
+			// aapt resource value: 0x7F07007B
+			public const int outline_reorder_black_24 = 2131165307;
+			
+			// aapt resource value: 0x7F07007C
+			public const int outline_reorder_black_36 = 2131165308;
+			
+			// aapt resource value: 0x7F07007D
+			public const int outline_reorder_black_48 = 2131165309;
+			
+			// aapt resource value: 0x7F07007E
+			public const int outline_today_24 = 2131165310;
+			
+			// aapt resource value: 0x7F07007F
+			public const int outline_today_black_18 = 2131165311;
+			
+			// aapt resource value: 0x7F070080
+			public const int outline_today_black_24 = 2131165312;
+			
+			// aapt resource value: 0x7F070081
+			public const int outline_today_black_36 = 2131165313;
+			
+			// aapt resource value: 0x7F070082
+			public const int outline_today_black_48 = 2131165314;
+			
+			// aapt resource value: 0x7F070083
+			public const int tooltip_frame_dark = 2131165315;
+			
+			// aapt resource value: 0x7F070084
+			public const int tooltip_frame_light = 2131165316;
 			
 			static Drawable()
 			{
