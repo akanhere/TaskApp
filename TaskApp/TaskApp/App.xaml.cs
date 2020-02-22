@@ -12,7 +12,7 @@ namespace TaskApp
         {
             InitializeComponent();
 
-            MainPage = new TaskCreatorHomeView();
+            MainPage = new CreateTask();
         }
 
         protected override void OnStart()
